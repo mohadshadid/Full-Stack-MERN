@@ -11,8 +11,7 @@ class UnitCard extends Card{
     this.resilience = resilience;
 }
 attack(target){
-    target.power -=10;
-    target.resilience -=3
+    target.resilience -= target.power
     target.power += 5;
 }
 }
