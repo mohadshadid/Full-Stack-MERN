@@ -15,7 +15,8 @@ const User = (props) => {
         e.preventDefault();
         const newUser={firstName,lastName,email,password,confirmPassword};
     }
-   const handelFirstNamerorr = (e)=>{
+    
+    const handelFirstNamerorr = (e)=>{
     setFirstName(e.target.value)
     if (e.target.value.length <1){
         setFirstNamerorr("first name is required");
@@ -38,9 +39,9 @@ const User = (props) => {
       <p style={{color:'red'}}>{firstNameerorr}</p>
       </p>
     <p>Last Name:<input type="text" onChange={e=>setLastName(e.target.value)}/></p>
-    <p>Email:<input type="text" onChange={e=>setEmail(e.target.value)}/></p>
-    <p>Password:<input type="text" onChange={e=>setPassword(e.target.value)}/></p>
-    <p>Confirm Password:<input type="text" onChange={e=>setConfirmPassword(e.target.value)}/></p>
+    <p>Email:<input type="email" onChange={e=>setEmail(e.target.value)}/></p>
+    <p>Password:<input type="Password" onChange={e=>setPassword(e.target.value)}/></p>
+    <p>Confirm Password:<input type="Password" onChange={e=>setConfirmPassword(e.target.value)}/></p>
     </div>
     <div>
         <h2>Your Form Data</h2>
