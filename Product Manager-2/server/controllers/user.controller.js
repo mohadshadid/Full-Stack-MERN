@@ -27,3 +27,4 @@ module.exports.getOneUser = (request, response) => {
         .then(User => response.json(User))
         .catch(err => response.json(err))
 }
+

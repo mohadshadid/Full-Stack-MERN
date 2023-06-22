@@ -4,6 +4,8 @@ module.exports = function(app){
     app.post('/api/people', UserController.createUser);
     app.get('/api/people', UserController.getAllUser);
     app.get('/api/people/:id', UserController.getOneUser);
+    
+
 
 
 }

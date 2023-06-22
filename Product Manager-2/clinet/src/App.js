@@ -10,6 +10,7 @@ function App() {
            <Routes>
              <Route element={<Main/>} path="/" />
              <Route element={<Detail/>} path="/add/:id" />
+
          </Routes> 
       
     </div>
