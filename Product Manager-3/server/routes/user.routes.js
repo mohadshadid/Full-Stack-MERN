@@ -7,6 +7,4 @@ module.exports = function(app){
     app.put('/api/people/:id/edit', UserController.updateUser);
     app.delete('/api/people/:id', UserController.deleteUser);
 
-
-
 }
